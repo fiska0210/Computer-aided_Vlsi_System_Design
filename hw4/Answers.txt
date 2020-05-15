@@ -1,0 +1,78 @@
+#CVSE HW#4 r06943087 ¸­¬Â·ì
+
+A-1		2605 flip-flops
+A-2		
+		Scan chain '1' (test_si1 --> test_so1) contains 101 cells
+		Scan chain '2' (test_si2 --> test_so2) contains 101 cells
+		Scan chain '3' (test_si3 --> test_so3) contains 101 cells
+		Scan chain '4' (test_si4 --> test_so4) contains 101 cells
+		Scan chain '5' (test_si5 --> test_so5) contains 101 cells
+		Scan chain '6' (test_si6 --> test_so6) contains 100 cells
+		Scan chain '7' (test_si7 --> test_so7) contains 100 cells
+		Scan chain '8' (test_si8 --> test_so8) contains 100 cells
+		Scan chain '9' (test_si9 --> test_so9) contains 100 cells
+		Scan chain '10' (test_si10 --> test_so10) contains 100 cells
+		Scan chain '11' (test_si11 --> test_so11) contains 100 cells
+		Scan chain '12' (test_si12 --> test_so12) contains 100 cells
+		Scan chain '13' (test_si13 --> test_so13) contains 100 cells
+		Scan chain '14' (test_si14 --> test_so14) contains 100 cells
+		Scan chain '15' (test_si15 --> test_so15) contains 100 cells
+		Scan chain '16' (test_si16 --> test_so16) contains 100 cells
+		Scan chain '17' (test_si17 --> test_so17) contains 100 cells
+		Scan chain '18' (test_si18 --> test_so18) contains 100 cells
+		Scan chain '19' (test_si19 --> test_so19) contains 100 cells
+		Scan chain '20' (test_si20 --> test_so20) contains 100 cells
+		Scan chain '21' (test_si21 --> test_so21) contains 100 cells
+		Scan chain '22' (test_si22 --> test_so22) contains 100 cells
+		Scan chain '23' (test_si23 --> test_so23) contains 100 cells
+		Scan chain '24' (test_si24 --> test_so24) contains 100 cells
+		Scan chain '25' (test_si25 --> test_so25) contains 100 cells
+		Scan chain '26' (test_si26 --> test_so26) contains 100 cells
+
+A-3		
+		test_si1    test_so1 
+		test_si2    test_so2 
+		test_si3    test_so3 
+		test_si4    test_so4 
+		test_si5    test_so5 
+		test_si6    test_so6 
+		test_si7    test_so7 
+		test_si8    test_so8 
+		test_si9    test_so9 
+		test_si10   test_so10
+		test_si11   test_so11
+		test_si12   test_so12
+		test_si13   test_so13
+		test_si14   test_so14
+		test_si15   test_so15
+		test_si16   test_so16
+		test_si17   test_so17
+		test_si18   test_so18
+		test_si19   test_so19
+		test_si20   test_so20
+		test_si21   test_so21
+		test_si22   test_so22
+		test_si23   test_so23
+		test_si24   test_so24
+		test_si25   test_so25
+		test_si26   test_so26
+
+A-4		test_se
+----------------------------------------------------------------------------------------		
+B-1		228212.038487(um^2)
+B-2		252583.304432(um^2)
+B-3		10.68%
+B-4		Because scan chain need more area for building, and flip-flops have MUX to choose scan mode or functional mode, it will introduces area overhead. 
+----------------------------------------------------------------------------------------		
+C-1		10.28 (ns)
+C-2		10.09 (ns)
+C-3		-1.84%, 
+                Because there may have difference between design compiler and dft compiler, and it may cause some rounding error, 
+                so timimg report may report different dealay even the two tools have same path, or maybe tools trace different path even.                
+               
+C-4		Because we add scan chains, the DFF became to SDFF, so the setup time will be addition and let the critical path beging shorter.
+----------------------------------------------------------------------------------------
+D-1		72000
+D-2		197
+D-3		99.80%
+D-4		99.73%
